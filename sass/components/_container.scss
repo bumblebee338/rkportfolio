@@ -1,0 +1,184 @@
+.header{
+    position: relative;
+}
+
+.container{
+    //background-color: orangered;
+    height: 85vh;
+    width: 90%;
+
+    position: absolute;
+    top: 8%;
+    left: 5%;
+
+    display: flex;
+    border-top: 1.2rem solid $color-black;
+
+    &__white{
+        background-color:#fff;
+        flex:0 0 50%;
+        box-shadow: 0 4rem 4rem rgba($color-black,0.25);
+
+        display: flex;
+
+        &-heading{
+            flex: 0 0 30%;
+            display: flex;
+            flex-direction: column;
+
+        }
+        &-cooperation{
+            //background-color: blueviolet;
+            flex: 1;
+        }
+    }
+    &__black{
+        background-color: $color-light-black;
+        flex: 1;
+        color: rgb(255, 255, 255);
+        box-shadow: 0  4rem 4rem rgba($color-white,0.25);
+
+        //position: relative;
+
+        
+    }
+}
+.navicon{
+    font-size: 5rem;
+    padding: 1.2rem;
+    flex: 0 0 10%;
+     &__icon-text{
+         height: 4rem;
+         width: 4rem;
+     }
+}
+.name{
+    padding: 1.2rem;
+    margin-left: 2.5rem;
+    flex: 0 0 50%;
+    font-family: 'Acme', sans-serif;
+    margin-top: 1rem;
+    letter-spacing: .5rem;
+
+    position: relative;
+
+    &__text{
+       font-size: 5rem;
+       writing-mode: vertical-rl;
+       transform: rotate(180deg);
+       text-transform: uppercase;
+       
+   }
+
+    &__designation{
+        font-size: 2rem;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        position: absolute;
+        top: 12rem;
+        left:8rem;
+    }
+}
+.tagline{
+    padding: 2.5rem;
+    font-size: 2.5rem;
+    background-color: $color-black;
+    color: $color-white;
+    flex: 1;
+    font-family: 'Lacquer', sans-serif;
+    
+}    
+
+.cooperation{
+    background-color: $color-white;
+    padding: 1rem;
+
+    &__heading{
+        font-size: 3rem;
+        font-family: Acme;
+        letter-spacing: 1rem;
+    }
+    &__details{
+        font-size: 2rem;
+        font-family: 'Special Elite', cursive;
+        padding: .5rem;
+    }
+
+    &__quote{
+        font-size: 2.5rem;
+        font-family: 'Lobster Two', cursive;
+        letter-spacing: 1rem;
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////
+//////NAVIGATION
+.navigation{
+    margin-left: 7rem;
+    padding: 2rem;
+    //border: 1px solid yellow;
+    
+    &__list{
+        font-size: 2.2rem;
+        display: flex;
+        padding: 1rem;
+        list-style: none;
+
+        &-item{
+            display: inline-block;
+            padding: .5rem;
+            font-family: 'Special Elite', cursive;
+            color: white;
+           
+            &:not(:last-child){
+                margin-right: 4rem;
+            }
+        }
+        &-item:hover{
+            border-bottom: 1px solid $color-white;
+        }
+
+
+        &-link:link,
+        &-link:visited{
+            text-decoration: none;
+            color: $color-white;
+        }
+
+        &-link:active{
+            color: $color-dark-white;
+        }
+
+
+    }
+}
+
+///////////////////////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+////////\\\\\\\\\\ IMAGE
+.image-big{
+    height: 71.4%;
+    width: 45%;
+    position: absolute;
+    top: 20.6rem;
+    left: 24.5rem;
+
+    filter: grayscale(12);
+}
+
+.details{
+    color: white;
+    font-size: 2.5rem;
+    padding: 1rem;
+    position: absolute;
+    top: 20.45rem;
+    right: 5rem;
+
+    //height: 72%;
+    width: 35%;
+
+    
+    columns: 2;
+
+    //border: 1px solid white;
+}
+

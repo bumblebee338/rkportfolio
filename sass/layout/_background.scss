@@ -1,0 +1,15 @@
+.background{
+
+    display: flex;
+    height: 100vh;
+
+    &__white{
+        background-color:#fff;
+        flex:0 0 50%;
+    }
+    &__black{
+        background-color: #000;
+        flex: 1;
+        color: #fff;
+    }
+}
